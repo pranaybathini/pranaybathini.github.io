@@ -36,6 +36,16 @@ canvas {
   left: 0;
 }
 
+.zoom{
+  transition: transform .5s ease, visibility .25s ease-in;
+  filter: brightness(80%);
+}
+
+.zoom:hover{
+  transform: scale(1.1) ;
+  filter: brightness(105%);
+}
+
 a {
   color: #2c98f0;
   -webkit-transition: 0.5s;
@@ -1613,6 +1623,18 @@ align-items: stretch;}
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 16px;
+}
+
+
+.box {
+  transition: box-shadow .3s;
+  border: 1px solid #ccc;
+  background: #fff;
+  float: left;
+  
+}
+.box:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
 .typing-text::after{
