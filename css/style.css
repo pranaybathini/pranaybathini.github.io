@@ -54,6 +54,14 @@ canvas {
     filter: brightness(105%);
 }
 
+.justzoom{
+    transition: transform .5s ease, visibility .25s ease-in;
+}
+
+.justzoom:hover{
+    transform: scale(1.07);
+}
+
 a {
     color: #2c98f0;
     -webkit-transition: 0.5s;
