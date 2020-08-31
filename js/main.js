@@ -327,4 +327,4 @@ setTyper(text, words);
 
 setTimeout(function () {
     window.location.hash = '#colorlib-page';
-}, 5000);
+}, 25000);
