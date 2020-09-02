@@ -2325,16 +2325,16 @@ header:hover{
     transition: background-color 1000ms linear;
 }
 
-header h1 {
+.typing-text{
     padding-top: 15px;
     /*padding-top: -webkit-calc(50vh - 113px);*/
     /*padding-top: expression(50vh - 113px);*/
     /*padding-top: -moz-calc(50vh - 113px);*/
     /*padding-top: -o-calc(50vh - 113px);*/
     /*padding-top: calc(50vh - 209px);*/
-    font-size: 5em;
+    font-size: 3em;
     font-weight: 100;
-    font-family:'Cookie', cursive;
+    font-family: system-ui, serif;
 }
 
 header span.animated {
@@ -2378,4 +2378,20 @@ header span::after {
     -ms-transform:     rotate(45deg);
     -o-transform:      rotate(45deg);
     transform:         rotate(45deg);
+}
+
+.btn{
+    background-color: teal;
+    border: none;
+    color: white;
+    padding: 8px 13px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: monospace;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: black;
+    color: white;
 }
