@@ -51,7 +51,7 @@ canvas {
 
 .zoom:hover {
     transform: scale(1.1);
-    filter: brightness(105%);
+    filter: brightness(85%);
 }
 
 .justzoom{
@@ -2307,7 +2307,7 @@ header {
     position: relative;
     text-align: center;
     height: 99vh;
-    background:  linear-gradient(to right, #2c3e50, #4ca1af);
+    background: linear-gradient(to right bottom, #6d327c, #485DA6, #00a1ba, #01b18e, #32b37b);
     color: #fff;
 }
 
@@ -2317,7 +2317,7 @@ header {
     padding: 0;
 }
 header:hover{
-    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    background:linear-gradient(to right bottom, #6d327c, #485DA6, #00a1ba, #01b18e, #32b37b);
     -webkit-transition: background-color 1000ms linear;
     -moz-transition: background-color 1000ms linear;
     -o-transition: background-color 1000ms linear;
