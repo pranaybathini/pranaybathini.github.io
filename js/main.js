@@ -325,6 +325,8 @@ function setTyper(e, t) {
 
 setTyper(text, words);
 
-setTimeout(function () {
-    window.location.hash = '#colorlib-page';
-}, 25000);
+//Functio to go to specific part after certain time
+
+// setTimeout(function () {
+//     window.location.hash = '#colorlib-page';
+// }, 25000);
