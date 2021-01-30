@@ -2337,7 +2337,7 @@ header:hover{
     /*padding-top: calc(50vh - 209px);*/
     font-size: 2em;
     font-weight: 550;
-    font-family:  monospace,serif;
+    font-family:  system-ui,serif;
 }
 
 header span.animated {
