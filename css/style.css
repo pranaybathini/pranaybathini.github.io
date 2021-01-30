@@ -46,13 +46,13 @@ canvas {
 
 .zoom {
     transition: transform .5s ease, visibility .25s ease-in;
-    filter: brightness(80%);
+    filter: brightness(100%);
     transform: scale(0.8);
 }
 
 .zoom:hover {
     transform: scale(1);
-    filter: brightness(85%);
+    filter: brightness(105%);
 }
 
 .justzoom{
