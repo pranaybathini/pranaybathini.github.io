@@ -2335,8 +2335,8 @@ header:hover{
     /*padding-top: -moz-calc(50vh - 113px);*/
     /*padding-top: -o-calc(50vh - 113px);*/
     /*padding-top: calc(50vh - 209px);*/
-    font-size: 3.5em;
-    /*font-weight: 100;*/
+    font-size: 2em;
+    font-weight: 550;
     font-family:  monospace,serif;
 }
 
