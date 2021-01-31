@@ -2423,3 +2423,8 @@ header span::after {
         margin: auto;
     }
 }
+
+.navzoom:hover{
+    transform: scale(1.07);
+    border-bottom: 3px solid white;
+}
