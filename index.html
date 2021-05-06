@@ -41,10 +41,28 @@
   gtag('config', 'UA-188434585-1');
 </script>
 
-
+<style>
+    .progress-container{width:100%;position:fixed;z-index:99;top:0;left:0;}
+    .progress-bar1{height:2px;background:#eca114;}
+    </style>
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+        function myFunction(){
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+        </script>
 </head>
 
+
 <body>
+    <div class='progress-container'>
+        <div class='progress-bar1' id='myBar' style="width:0%;"></div>
+        </div>
 <canvas id="canvas"></canvas>
 <!--<div id="navbar">-->
 <!--    <a href="#home">Home</a>-->
