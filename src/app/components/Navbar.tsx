@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className="bg-white/80 border-b border-gray-100">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-14">
+        <div className="flex flex-col md:flex-row justify-between items-center h-14">
           {/* Logo */}
           <Link href="/">
             <span className={`${caveat.className} text-3xl text-gray-800 hover:text-gray-600 transition-colors`}>
