@@ -29,14 +29,14 @@ export default function Footer() {
               target="_blank"
               className="text-gray-600 hover:text-gray-900 transition-colors inline-flex"
             >
-              <FaGithub size={28} />
+              <FaGithub size={28} aria-label="GitHub Icon"/>
             </Link>
             <Link 
               href="https://linkedin.com/in/pranaybathini" 
               target="_blank"
               className="text-gray-600 hover:text-gray-900 transition-colors inline-flex"
             >
-              <FaLinkedin size={28} />
+              <FaLinkedin size={28} aria-label="LinkedIn Icon"/>
             </Link>
           </div>
         </div>
