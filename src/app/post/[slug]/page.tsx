@@ -184,6 +184,8 @@ export default async function BlogPost({ params }: Props) {
                         fill
                         className="rounded-lg object-contain"
                         priority
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+
                       />
                     </div>
                     {alt && (

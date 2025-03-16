@@ -24,6 +24,7 @@ export default function PostGrid({ posts = [], columns = 3, isRecent = false }: 
                 alt={post.title} 
                 fill
                 className="object-cover" 
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <h3 className={`font-serif mb-2 group-hover:underline ${

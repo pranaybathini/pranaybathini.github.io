@@ -25,14 +25,14 @@ export default function Footer() {
           {/* Social Media Icons */}
           <div className="flex items-center space-x-6 p-0 border-0">
             <Link 
-              href="https://github.com/yourusername" 
+              href="https://github.com/pranaybathini" 
               target="_blank"
               className="text-gray-600 hover:text-gray-900 transition-colors inline-flex"
             >
               <FaGithub size={28} />
             </Link>
             <Link 
-              href="https://linkedin.com/in/yourusername" 
+              href="https://linkedin.com/in/pranaybathini" 
               target="_blank"
               className="text-gray-600 hover:text-gray-900 transition-colors inline-flex"
             >

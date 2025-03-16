@@ -2,7 +2,7 @@
 title: "Distributed Systems Glossary"
 description: "A distributed system contains multiple nodes which are physically separate but linked  together by the network."
 date: "2021-02-08"
-image: "https://www.splunk.com/content/dam/splunk2/images/data-insider/what-are-distributed-systems/distributed-systems-diagram.svg"
+image: "/images/5_ds.svg"
 tags: ["Distributed Systems"]
 
 ---

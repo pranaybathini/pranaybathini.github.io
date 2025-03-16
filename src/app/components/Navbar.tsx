@@ -18,19 +18,19 @@ export default function Navbar() {
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-6">
             <Link 
-              href="/about" 
+              href="https://linkedin.com/in/pranaybathini" 
               className="relative text-gray-600 hover:text-gray-900 transition-colors after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-gray-900 after:transition-all"
             >
               About
             </Link>
             <Link 
-              href="/blog" 
+              href="/" 
               className="relative text-gray-600 hover:text-gray-900 transition-colors after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-gray-900 after:transition-all"
             >
               Blog
             </Link>
             <Link 
-              href="/contact" 
+              href="https://linkedin.com/in/pranaybathini" 
               className="px-4 py-1.5 rounded-full bg-gray-800 text-white hover:bg-gray-700 transition-colors"
             >
               Contact
