@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.16",
+    "date-fns": "^4.1.0",
     "gray-matter": "^4.0.3",
     "marked": "^15.0.7",
     "next": "^15.2.1",

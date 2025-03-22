@@ -2,24 +2,23 @@
 
 import { useState } from 'react'
 import type { BlogPost } from '../types/BlogPost'
-import PostGrid from './PostGrid'
 
 type TagFilterProps = {
   initialPosts: BlogPost[]
+  onPostsFiltered: (filteredPosts: BlogPost[]) => void // Callback for parent
 }
 
-export default function TagFilter({ initialPosts }: TagFilterProps) {
-  const [posts, setPosts] = useState(initialPosts)
+export default function TagFilter({ initialPosts, onPostsFiltered }: TagFilterProps) {
   const [selectedTag, setSelectedTag] = useState<string | null>(null)
-  
-  const allTags = Array.from(new Set(initialPosts?.flatMap(post => post.tags) || []))
+
+  const allTags = Array.from(new Set(initialPosts.flatMap(post => post.tags)))
 
   const handleTagSelect = (tag: string | null) => {
     setSelectedTag(tag)
-    const filtered = tag 
+    const filtered = tag
       ? initialPosts.filter(post => post.tags.includes(tag))
       : initialPosts
-    setPosts(filtered)
+    onPostsFiltered(filtered) // Pass filtered posts to parent
   }
 
   return (
@@ -50,23 +49,6 @@ export default function TagFilter({ initialPosts }: TagFilterProps) {
             </button>
           ))}
         </div>
-      </section>
-
-      <section className="mb-16">
-        <h2 className="font-serif text-3xl mb-8">Recent Stories</h2>
-        <PostGrid 
-          posts={posts.slice(0, 2)} 
-          columns={2} 
-          isRecent={true}
-        />
-      </section>
-
-      <section>
-        <h2 className="font-serif text-3xl mb-8">More Stories</h2>
-        <PostGrid 
-          posts={posts.slice(2)} 
-          columns={3}
-        />
       </section>
     </div>
   )
