@@ -74,21 +74,54 @@ export default function AIInteraction({ content }: AIInteractionProps) {
         </p>
 
         <div className="flex flex-wrap gap-3 mb-6">
-          <button className="text-sm bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-full" onClick={() => handleQuickQuestion("Can you summarize this article?")}>Can you summarize this article?</button>
-          <button className="text-sm bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-full" onClick={() => handleQuickQuestion("What are the key takeaways?")}>What are the key takeaways?</button>
-          <button className="text-sm bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-full" onClick={() => handleQuickQuestion("Explain the article in layman terms")}>Explain the article in layman terms</button>
+          <button
+            className="text-sm bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-full"
+            onClick={() => handleQuickQuestion("Can you summarize this article?")}
+          >
+            Can you summarize this article?
+          </button>
+          <button
+            className="text-sm bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-full"
+            onClick={() => handleQuickQuestion("What are the key takeaways?")}
+          >
+            What are the key takeaways?
+          </button>
+          <button
+            className="text-sm bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-full"
+            onClick={() => handleQuickQuestion("Explain the article in layman terms")}
+          >
+            Explain the article in layman terms
+          </button>
         </div>
 
         <form onSubmit={handleSubmit} className="flex gap-3">
-          <input type="text" value={question} onChange={(e) => setQuestion(e.target.value)} placeholder="Ask a question about this article..." className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black" />
-          <button type="submit" disabled={isLoading} className="bg-black text-white px-4 py-3 rounded-lg hover:bg-gray-800 disabled:opacity-50">
+          <input
+            type="text"
+            value={question}
+            onChange={(e) => setQuestion(e.target.value)}
+            placeholder="Ask a question about this article..."
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black"
+          />
+          <button
+            type="submit"
+            disabled={isLoading}
+            className="bg-black text-white px-4 py-3 rounded-lg hover:bg-gray-800 disabled:opacity-50"
+          >
             {isLoading ? "Thinking..." : "Ask"}
           </button>
         </form>
 
         {(response || isLoading) && (
           <div className="bg-white p-4 rounded-lg border border-gray-200 mt-4">
-            <div>{isLoading ? "Thinking..." : <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight]}>{response}</ReactMarkdown>}</div>
+            <div>
+              {isLoading ? (
+                "Thinking..."
+              ) : (
+                <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight]}>
+                  {response}
+                </ReactMarkdown>
+              )}
+            </div>
           </div>
         )}
       </div>
