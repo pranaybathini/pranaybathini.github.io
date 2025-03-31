@@ -9,6 +9,7 @@ import rehypeHighlight from "rehype-highlight";
 import "highlight.js/styles/atom-one-dark.css";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
+import AIInteraction  from "@/app/components/AIInteraction";
 import Image from "next/image";
 import CodeBlock from "./CodeBlock";
 
@@ -212,6 +213,7 @@ export default async function BlogPost({ params }: Props) {
               {content}
             </ReactMarkdown>
           </article>
+          <AIInteraction articleContent={content}/>
         </main>
         <Footer />
       </React.Fragment>
