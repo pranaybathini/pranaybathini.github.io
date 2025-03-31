@@ -11,7 +11,7 @@ import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import AIInteraction  from "@/app/components/AIInteraction";
 import Image from "next/image";
-import CodeBlock from "./CodeBlock";
+import CodeBlock from "@/app/components/CodeBlock";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
@@ -213,7 +213,7 @@ export default async function BlogPost({ params }: Props) {
               {content}
             </ReactMarkdown>
           </article>
-          <AIInteraction articleContent={content}/>
+          <AIInteraction content={content}/>
         </main>
         <Footer />
       </React.Fragment>
